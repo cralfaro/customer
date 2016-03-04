@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" crossorigin="anonymous"/>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<h1>Customers</h1>
+
+<div th:each="customer : ${list}">
+    <span class="badge" th:text="${customer.id}"></span>
+    <div class="panel-body">
+        <label th:text="${customer.firstName}"></label>
+        <label th:text="${customer.lastName}"></label>
+        <div th:each="order : ${customer.orders}">
+            <label th:text="${order.name}"></label>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
