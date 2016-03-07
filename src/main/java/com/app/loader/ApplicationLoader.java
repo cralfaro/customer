@@ -1,7 +1,7 @@
 package com.app.loader;
 
-import com.app.persistence.Customer;
-import com.app.persistence.Orders;
+import com.app.domain.Customer;
+import com.app.domain.Orders;
 import com.app.repository.CustomerRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

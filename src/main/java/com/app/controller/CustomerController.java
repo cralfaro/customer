@@ -1,7 +1,6 @@
 package com.app.controller;
 
-import com.app.persistence.Customer;
-import com.app.persistence.Orders;
+import com.app.domain.Customer;
 import com.app.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

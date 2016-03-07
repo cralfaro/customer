@@ -1,6 +1,6 @@
 package com.app.service.impl;
 
-import com.app.persistence.Customer;
+import com.app.domain.Customer;
 import com.app.repository.CustomerRepository;
 import com.app.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;

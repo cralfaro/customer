@@ -1,6 +1,6 @@
 package com.app.service;
 
-import com.app.persistence.Customer;
+import com.app.domain.Customer;
 
 /**
  * Created by ruben on 4/03/16.
