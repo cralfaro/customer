@@ -4,8 +4,6 @@ package com.app;
  * Created by ruben on 4/03/16.
  */
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -56,7 +54,6 @@ public class RepositoryConfig {
     private Properties getJpaProperties() {
         return new Properties() {
             {
-                setProperty("hibernate.hbm2ddl.auto", "create-drop");
                 setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
                 setProperty("hibernate.show_sql", "true");
                 setProperty("hibernate.format_sql", "true");

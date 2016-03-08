@@ -24,6 +24,9 @@ public class Customer {
     @Getter @Setter
     private String lastName;
 
+    @Getter @Setter
+    private String city;
+
     @OneToMany(mappedBy = "customer", cascade = CascadeType.PERSIST, orphanRemoval = true, fetch = FetchType.LAZY)
     @Getter @Setter
     private List<Orders> orders;
